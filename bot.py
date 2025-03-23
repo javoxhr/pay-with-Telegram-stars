@@ -21,7 +21,7 @@ async def on_startup() -> None:
 async def start(message: Message) -> None:
      await message.answer_invoice(        
          title="Доступ к функционалу",
-         description="Оплатите 1 звезд и получите досткп к функционалу",
+         description="Оплатите 1 звезд и получите доступ к функционалу",
          payload="access_to_private",
          currency="XTR",
          prices=[LabeledPrice(label="XTR", amount=1)]  
